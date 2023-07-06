@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+button { margin: 0 4px;}
+mat-icon { cursor: pointer;}
+
+
+
+//Header styles
+
+.header-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  & .search-mat-form-full-width {
+    width: 100%;
+    flex-direction: row;
+  }
+  & .spacer {
+    flex: 1 1 auto;
+  }
+}
+
