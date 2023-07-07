@@ -16,6 +16,10 @@ export class UsersComponent {
     this.users$ = this.api.getAllUsers();
   }
 
+  trackBy(index: number, item: UserInterface) {
+    return item.id;
+  }
+
 
 
 }
