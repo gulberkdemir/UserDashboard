@@ -19,6 +19,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
 import {UsersComponent} from "./users/users.component";
 import {CommonModule} from "@angular/common";
+import { UserComponent } from './users/user/user.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {CommonModule} from "@angular/common";
     HeaderComponent,
     FooterComponent,
     UsersComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
