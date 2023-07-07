@@ -1,0 +1,180 @@
+{
+  "userList": [
+    {
+      "id": 122,
+      "avatar": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "firstName": "Harry",
+      "lastName": "Potter",
+      "email": "harrypotter@gmail.com",
+      "street": "Hogwarts",
+      "city": "London",
+      "zipCode": "12345",
+      "country": "United Kingdom"
+    },
+    {
+      "id": 43455,
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Giant_Panda_2004-03-2.jpg/640px-Giant_Panda_2004-03-2.jpg",
+      "firstName": "Smith",
+      "lastName": "Jones",
+      "email": "smithjones@gmail.com",
+      "street": "Rue de Rivoli",
+      "city": "Paris",
+      "zipCode": "3372383",
+      "country": "France"
+    },
+    {
+      "id": 67889,
+      "avatar": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW5pbWFsfGVufDB8fDB8fHww&w=1000&q=80",
+      "firstName": "Christopher",
+      "lastName": "Anderson",
+      "email": "christopheranderson@gmail.com",
+      "street": "Ahlsellvägen",
+      "city": "Stockholm",
+      "zipCode": "3372383",
+      "country": "Sweden"
+    },
+    {
+      "id": 64349,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK0Au6KMF9u-vu2fnUAZZCNLYxOXpfP9SRBQ&usqp=CAU",
+      "firstName": "Rick",
+      "lastName": "Novak",
+      "email": "ricknovak@gmail.com",
+      "street": "Javastraat",
+      "city": "Amsterdam",
+      "zipCode": "33222383",
+      "country": "Netherland"
+    },
+    {
+      "id": 349,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhgoVLX5i53sPcz7jxokfb6Kts0bMLYX2xQ&usqp=CAU",
+      "firstName": "Ronald",
+      "lastName": "Clark",
+      "email": "ronaldclark@gmail.com",
+      "street": "Königstrasse",
+      "city": "Stuttgart",
+      "zipCode": "1322383",
+      "country": "Germany"
+    },
+    {
+      "id": 756,
+      "avatar": "https://www.cbc.ca/kids/images/wild_and_wonderful_asian_animals_header_1140.jpg",
+      "firstName": "Jane",
+      "lastName": "Temple",
+      "email": "janetemple@gmail.com",
+      "street": "Park Avenue",
+      "city": "New York",
+      "zipCode": "422383",
+      "country": "USA"
+    },
+    {
+      "id": 23236,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJRmM4YBKuf3mYKOZ602T5Ok_qcklNZ3GDQ&usqp=CAU",
+      "firstName": "Margaret",
+      "lastName": "Adelman",
+      "email": "margaretadelman@gmail.com",
+      "street": "Takeshita Street",
+      "city": "Tokyo",
+      "zipCode": "412283",
+      "country": "Japan"
+    },
+    {
+      "id": 5223236,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpZ9W1iwJvSaab8-GdQvKlJwFAG6Eo-QHUXA&usqp=CAU",
+      "firstName": "Marvaa",
+      "lastName": "Rob",
+      "email": "marvaarob@gmail.com",
+      "street": "Borghorst Street",
+      "city": "Cape Town",
+      "zipCode": "254583",
+      "country": "South Africa"
+    },
+    {
+      "id": 212326,
+      "avatar": "https://media.wired.com/photos/593261cab8eb31692072f129/master/w_2560%2Cc_limit/85120553.jpg",
+      "firstName": "Carrie",
+      "lastName": "Peterson",
+      "email": "carriepeterson@gmail.com",
+      "street": "Danforth Avenue",
+      "city": "Toronto",
+      "zipCode": "12583",
+      "country": "Canada"
+    },
+    {
+      "id": 87626,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo1Jhrp1SUI1rQS0rxlhyWmUGvj1VdypP6g&usqp=CAU",
+      "firstName": "Ronald",
+      "lastName": "Barr",
+      "email": "ronaldbarr@gmail.com",
+      "street": "Cardedeu",
+      "city": "Barcelona",
+      "zipCode": "334545",
+      "country": "Spain"
+    },
+    {
+      "id": 22326,
+      "avatar": "https://hips.hearstapps.com/hmg-prod/images/cute-baby-animals-1558535060.jpg?crop=1.00xw:0.669xh;0,0.158xh&resize=1200:*",
+      "firstName": "Melvin",
+      "lastName": "Forbis",
+      "email": "melvinforbis@gmail.com",
+      "street": "Abbey",
+      "city": "Auckland",
+      "zipCode": "7673",
+      "country": "New Zealand"
+    },
+    {
+      "id": 2435326,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHkbzeLG65MNOAAMNxzBDsItr-gpiMzHeQG0XFOjkqbYrV13P6SwJTJs4lhfnfaThcGRg&usqp=CAU",
+      "firstName": "Brown",
+      "lastName": "Woods",
+      "email": "brownwoods@gmail.com",
+      "street": "Jongno",
+      "city": "Seoul",
+      "zipCode": "3373",
+      "country": "South Korea"
+    },
+    {
+      "id": 775326,
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTscXagzSHNxk77VRBpG7X-yQXEIPm1oRumwQ&usqp=CAU",
+      "firstName": "Susan",
+      "lastName": "Connor",
+      "email": "susanconnor@gmail.com",
+      "street": "Avenida Rodrigues Alves",
+      "city": "Rio De Janerio",
+      "zipCode": "223435",
+      "country": "Brasil"
+    },
+    {
+      "id": 13326,
+      "avatar": "https://media.newyorker.com/photos/62c4511e47222e61f46c2daa/4:3/w_2663,h_1997,c_limit/shouts-animals-watch-baby-hemingway.jpg",
+      "firstName": "Davies",
+      "lastName": "Thompson",
+      "email": "daviesthompson@gmail.com",
+      "street": "Ponte Della Vittoria",
+      "city": "Verona",
+      "zipCode": "235",
+      "country": "Italy"
+    },
+    {
+      "id": 33226,
+      "avatar": "https://a-z-animals.com/media/2019/11/Kangaroo-header-3.jpg",
+      "firstName": "Gary",
+      "lastName": "Cole",
+      "email": "garycole@gmail.com",
+      "street": "Albert Street",
+      "city": "Sydney",
+      "zipCode": "211235",
+      "country": "Australia"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+

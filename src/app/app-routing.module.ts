@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {DashboardComponent} from "./dashboard/dashboard.component";
+import {UsersComponent} from "./users/users.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 
 
 const routes: Routes = [
-  { path: 'dashboard/users', component: DashboardComponent },
+  { path: 'dashboard/users', component: UsersComponent },
   { path: '',   redirectTo: '/dashboard/users', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
