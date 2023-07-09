@@ -39,7 +39,7 @@ header{
 }
 
 .page-container{
-  padding: 4rem 1rem;
+  padding: 6rem 1rem;
 }
 
 
@@ -70,6 +70,16 @@ header{
   display: grid;
   gap: 1rem;
 }
+
+
+.example-full-width {
+  width: 100%;
+}
+
+td {
+  padding-right: 8px;
+}
+
 
 @media (min-width: 600px) {
   .card { grid-template-columns: repeat(2, 1fr);  max-width: 500px }

@@ -1,1 +1,31 @@
-<p>user-edit works!</p>
+
+<div class="page-container">
+  <div class="cards">
+    <td><mat-form-field class="example-full-width">
+      <mat-label>First name</mat-label>
+      <input matInput placeholder="Ex. Harry">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>Last Name</mat-label>
+      <input matInput  placeholder="Ex. Potter">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Ex. pat@example.com">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>Street</mat-label>
+      <input matInput placeholder="Ex. Alameda Street">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>City</mat-label>
+      <input matInput placeholder="Ex. California">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>Postal Code</mat-label>
+      <input matInput #postalCode maxlength="5" placeholder="Ex. 94105">
+      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+    </mat-form-field></td>
+  </div>
+
+</div>
