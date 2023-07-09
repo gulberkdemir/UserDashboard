@@ -5,7 +5,7 @@ import {Observable} from "rxjs";
 import {UserInterface} from "../types/user.model";
 import { faker } from '@faker-js/faker';
 import {ApiService} from "../services/api.service";
-import {UserComponent} from "../users/user/user.component";
+import {UserComponent} from "../user-management/users/user/user.component";
 
 @Component({
   selector: 'app-header',

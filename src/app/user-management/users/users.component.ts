@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
-import {ApiService} from "../services/api.service";
+import {ApiService} from "../../services/api.service";
 import {Observable, Subscription} from "rxjs";
-import {UserInterface} from "../types/user.model";
-import {HeaderService} from "../services/header.service";
+import {UserInterface} from "../../types/user.model";
+import {HeaderService} from "../../services/header.service";
 
 @Component({
   selector: 'app-users',

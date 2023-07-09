@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {UsersComponent} from "./users/users.component";
+import {UsersComponent} from "./user-management/users/users.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
-import {UserEditComponent} from "./user-edit/user-edit.component";
-import {UserComponent} from "./users/user/user.component";
+import {UserEditComponent} from "./user-management/user-edit/user-edit.component";
+import {UserComponent} from "./user-management/users/user/user.component";
+import {UserManagementModule} from "./user-management/user-management.module";
 
 
 const routes: Routes = [
-  { path: 'dashboard/users', component: UsersComponent },
-  { path: 'dashboard/users/:id', component: UserEditComponent},
-  { path: '',   redirectTo: '/dashboard/users', pathMatch: 'full' }, // redirect to `first-component`
-  { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
+  {
+    path: '', loadChildren: () => import('./user-management/user-management.module').then(m => m.UserManagementModule)
+  }
 ];
 //
 //

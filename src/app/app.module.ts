@@ -17,12 +17,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import {HttpClientModule} from "@angular/common/http";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
-import {UsersComponent} from "./users/users.component";
+import {UsersComponent} from "./user-management/users/users.component";
 import {CommonModule} from "@angular/common";
-import { UserComponent } from './users/user/user.component';
+import { UserComponent } from './user-management/users/user/user.component';
 import { FilterPipe } from './filter.pipe';
 import {FormsModule} from "@angular/forms";
-import { UserEditComponent } from './user-edit/user-edit.component';
+import { UserEditComponent } from './user-management/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
