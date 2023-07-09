@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnChanges, ViewEncapsulation} from '@angular/core';
 import {Router} from "@angular/router";
 import {HeaderService} from "../services/header.service";
 import {Observable} from "rxjs";
@@ -11,20 +11,25 @@ import {UserComponent} from "../users/user/user.component";
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
 
   urlObs$: Observable<string>;
   isUserPageObs$: Observable<boolean>;
+  searchKeyword: string ='';
 
   constructor(
     private headerService: HeaderService,
     private apiService: ApiService
   ) {
     this.urlObs$ =this.headerService.url$.asObservable();
-    this.urlObs$.subscribe(a => console.log(a));
-
     this.isUserPageObs$ =this.headerService.isUsersPage$.asObservable();
+  }
+
+
+  changeText(e: any){
+    this.headerService.searchKeywordSub$.next(this.searchKeyword);
   }
 
   createUser(){

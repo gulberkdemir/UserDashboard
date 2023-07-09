@@ -20,6 +20,8 @@ import {MatCardModule} from "@angular/material/card";
 import {UsersComponent} from "./users/users.component";
 import {CommonModule} from "@angular/common";
 import { UserComponent } from './users/user/user.component';
+import { FilterPipe } from './filter.pipe';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { UserComponent } from './users/user/user.component';
     FooterComponent,
     UsersComponent,
     PageNotFoundComponent,
-    UserComponent
+    UserComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { UserComponent } from './users/user/user.component';
     MatAutocompleteModule,
     HttpClientModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

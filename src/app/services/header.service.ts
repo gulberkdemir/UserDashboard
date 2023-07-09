@@ -12,16 +12,14 @@ export class HeaderService {
 
   isUsersPage$ = new BehaviorSubject<boolean>(true)
 
+  searchKeywordSub$ = new BehaviorSubject<string>('')
+
 
 
   constructor(
     private router: Router
   ) {
-    // router.events.pipe(
-    //   filter(event => event instanceof NavigationEnd)
-    // ).subscribe((event: any) => {
-    //   this.url$.next(event.url);
-    // });
+
 
     router.events.pipe(
       filter(event => event instanceof NavigationEnd)

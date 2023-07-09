@@ -1,6 +1,6 @@
 <div class="page-container">
 <div class="cards">
-  <app-user *ngFor="let user of users$ |async; trackBy:trackBy "
+  <app-user *ngFor="let user of users$ |async | filter: searchKeyword; trackBy:trackBy "
             [user]="user">
   </app-user>
 </div>
