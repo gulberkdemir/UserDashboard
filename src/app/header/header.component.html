@@ -5,7 +5,7 @@
       <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
     <span class="spacer"></span>
-    <button mat-button mat-raised-button color="warn" [disabled]="!(isUserPageObs$|async)">Create</button>
+    <button mat-button mat-raised-button color="warn" [disabled]="!(isUserPageObs$|async)" (click)="createUser()">Create</button>
     <button mat-button mat-raised-button color="primary">Save</button>
   </mat-toolbar>
 </header>
