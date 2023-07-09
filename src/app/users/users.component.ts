@@ -5,7 +5,7 @@ import {UserInterface} from "../types/user.model";
 import {HeaderService} from "../services/header.service";
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss'],
 })

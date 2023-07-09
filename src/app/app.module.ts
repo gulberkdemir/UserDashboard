@@ -22,6 +22,7 @@ import {CommonModule} from "@angular/common";
 import { UserComponent } from './users/user/user.component';
 import { FilterPipe } from './filter.pipe';
 import {FormsModule} from "@angular/forms";
+import { UserEditComponent } from './user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {FormsModule} from "@angular/forms";
     UsersComponent,
     PageNotFoundComponent,
     UserComponent,
-    FilterPipe
+    FilterPipe,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
