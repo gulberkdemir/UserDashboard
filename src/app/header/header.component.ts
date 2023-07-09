@@ -39,13 +39,8 @@ export class HeaderComponent {
       zipCode: faker.location.zipCode(),
       country: faker.location.country(),
     };
-      this.apiService.createUser(newUser).subscribe(
-        a => console.log(a)
-      );
-      this.apiService.getAllUsers().subscribe(
-        z =>  this.apiService.usersSub$.next(z)
-
-      );
+      this.apiService.createUser(newUser).subscribe();
+      this.apiService.getAllUsers().subscribe();
 
   }
 

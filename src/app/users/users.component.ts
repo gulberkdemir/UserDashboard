@@ -27,7 +27,7 @@ export class UsersComponent implements OnInit{
   }
 
   ngOnInit() {
-    this.api.getAllUsers().subscribe(k =>  this.api.usersSub$.next(k) )
+    this.api.getAllUsers().subscribe();
 
   }
 
