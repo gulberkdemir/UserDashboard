@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {UsersComponent} from "./user-management/users/users.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
-import {UserEditComponent} from "./user-management/user-edit/user-edit.component";
+import {UserEditComponent} from "./user-detail/user-edit/user-edit.component";
 import {UserComponent} from "./user-management/users/user/user.component";
 import {UserManagementModule} from "./user-management/user-management.module";
 
@@ -10,6 +10,9 @@ import {UserManagementModule} from "./user-management/user-management.module";
 const routes: Routes = [
   {
     path: '', loadChildren: () => import('./user-management/user-management.module').then(m => m.UserManagementModule)
+  },
+  {
+    path: 'dashboard/users/:id', loadChildren: () => import('./user-detail/user-detail.module').then(m => m.UserDetailModule)
   }
 ];
 //
