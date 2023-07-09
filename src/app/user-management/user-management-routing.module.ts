@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {PageNotFoundComponent} from "../page-not-found/page-not-found.component";
-import {UserEditComponent} from "../user-detail/user-edit/user-edit.component";
+import {UserEditComponent} from "./user-edit/user-edit.component";
 import {UsersComponent} from "./users/users.component";
 
 const routes: Routes = [

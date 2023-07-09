@@ -22,7 +22,7 @@ import {CommonModule} from "@angular/common";
 import { UserComponent } from './user-management/users/user/user.component';
 import { FilterPipe } from './filter.pipe';
 import {FormsModule} from "@angular/forms";
-import { UserEditComponent } from './user-detail/user-edit/user-edit.component';
+import { UserEditComponent } from './user-management/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
