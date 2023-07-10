@@ -7,7 +7,7 @@ import {UsersComponent} from "./users/users.component";
 const routes: Routes = [
   { path: 'dashboard/users', component: UsersComponent },
   { path: 'dashboard/users/:id', component: UserEditComponent},
-  { path: '',   redirectTo: '/dashboard/users', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '',   redirectTo: '/dashboard/users', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
 

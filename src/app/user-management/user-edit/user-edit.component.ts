@@ -1,19 +1,22 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {ApiService} from "../../shared/services/api.service";
 import {UserInterface} from "../../shared/types/user.model";
 import {HeaderService} from "../../shared/services/header.service";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-user-edit',
   templateUrl: './user-edit.component.html',
   styleUrls: ['./user-edit.component.scss']
 })
-export class UserEditComponent implements OnInit{
+export class UserEditComponent implements OnInit, OnDestroy{
   id?: number;
   userEditForm!: FormGroup;
   user?: UserInterface;
+
+  isSaveClickedSub: Subscription;
   constructor(     private route: ActivatedRoute,
                    private router: Router,
                    private apiService: ApiService, private fb: FormBuilder, private headerService: HeaderService) {
@@ -27,7 +30,7 @@ export class UserEditComponent implements OnInit{
       country: new FormControl('', [Validators.required,Validators.pattern('^[a-zA-Z ]+$')])
     });
 
-    this.headerService.isSaveClicked$.subscribe(a => {
+    this.isSaveClickedSub = this.headerService.isSaveClicked$.subscribe(a => {
       if(a){
         this.Submit();
       }})
@@ -40,7 +43,6 @@ export class UserEditComponent implements OnInit{
       this.initForm();
     });
   }
-
 
   private initForm(){
     this.apiService.getUser(this.id!).subscribe(
@@ -61,16 +63,9 @@ export class UserEditComponent implements OnInit{
 
 
 
-
-
-
   }
 
   Submit(){
-    console.log(this.user?.avatar)
-
-   console.log(this.userEditForm)
-
     const updatedUser: UserInterface = {
       id: String(this.id),
       avatar: this.user?.avatar!,
@@ -84,14 +79,11 @@ export class UserEditComponent implements OnInit{
 
     }
     this.apiService.editUser(updatedUser, this.id!).subscribe();
-
     this.apiService.getUser(this.id!).subscribe( k => console.log(k));
     this.headerService.isSaveClicked$.next(false);
-
-
   }
-
-
-
+  ngOnDestroy() {
+    this.isSaveClickedSub.unsubscribe();
+  }
 
 }

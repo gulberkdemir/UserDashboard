@@ -49,7 +49,7 @@ export class HeaderComponent {
 
   }
 
-  Hello(){
+  SaveUser(){
     this.headerService.isSaveClicked$.next(true);
   }
 

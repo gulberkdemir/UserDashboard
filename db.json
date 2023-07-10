@@ -3,10 +3,10 @@
     {
       "id": 122,
       "avatar": "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      "firstName": "Harry",
+      "firstName": "Harryu",
       "lastName": "Potter",
       "email": "harrypotter@gmail.comy",
-      "street": "Hogwartsy",
+      "street": "Hogwarts",
       "city": "London",
       "zipCode": "444446",
       "country": "USA"
@@ -30,7 +30,7 @@
       "email": "christopheranderson@gmail.com",
       "street": "Ahlsellvägen",
       "city": "Stockholm",
-      "zipCode": "3372383",
+      "zipCode": "33723836",
       "country": "Sweden"
     },
     {
@@ -197,6 +197,17 @@
       "city": "Elijahhaven",
       "zipCode": "35071",
       "country": "Equatorial Guinea"
+    },
+    {
+      "id": "56dabf00-1d1e-4775-8215-882b1d5a14d5",
+      "avatar": "https://avatars.githubusercontent.com/u/25792278",
+      "firstName": "Mable",
+      "lastName": "Kuphal",
+      "email": "Mikel_Sipes@yahoo.com",
+      "street": "Dickens Junctions",
+      "city": "Karliview",
+      "zipCode": "56456",
+      "country": "Chile"
     }
   ],
   "comments": [
