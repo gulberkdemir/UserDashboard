@@ -34,7 +34,7 @@ export class HeaderComponent {
 
   createUser(){
     const newUser: UserInterface = {
-      id: faker.string.uuid(),
+      id: String(faker.number.int()),
       avatar: faker.image.avatar(),
       firstName: faker.person.firstName(),
       lastName: faker.person.lastName(),

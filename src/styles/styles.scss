@@ -72,8 +72,15 @@ header{
   margin: 0 auto;
   display: grid;
   gap: 1rem;
+  & mat-card  img{
+    border-radius: 50% !important;
+  }
 
 }
+.cursor{
+  cursor: pointer;
+}
+
 
 .example-full-width {
   width: $full-width;

@@ -1,5 +1,6 @@
-<div class="card" >
-  <mat-card class="example-card mat-elevation-z8" [routerLink]="[user.id]" >
+<div class="card cursor" matTooltip="Click to Edit"
+     [matTooltipPosition]="'below'">
+  <mat-card class="example-card mat-elevation-z8" [routerLink]="[user.id]"  >
     <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>{{user.firstName+" "+user.lastName}}</mat-card-title>
