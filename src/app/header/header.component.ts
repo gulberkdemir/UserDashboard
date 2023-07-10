@@ -1,10 +1,10 @@
 import {ChangeDetectionStrategy, Component, OnChanges, ViewEncapsulation} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {HeaderService} from "../services/header.service";
+import {HeaderService} from "../shared/services/header.service";
 import {Observable} from "rxjs";
-import {UserInterface} from "../types/user.model";
+import {UserInterface} from "../shared/types/user.model";
 import { faker } from '@faker-js/faker';
-import {ApiService} from "../services/api.service";
+import {ApiService} from "../shared/services/api.service";
 import {UserComponent} from "../user-management/users/user/user.component";
 
 @Component({

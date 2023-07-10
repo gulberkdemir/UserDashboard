@@ -5,11 +5,11 @@
       "avatar": "https://material.angular.io/assets/img/examples/shiba2.jpg",
       "firstName": "Harry",
       "lastName": "Potter",
-      "email": "harrypotter@gmail.com",
-      "street": "Hogwarts",
+      "email": "harrypotter@gmail.comy",
+      "street": "Hogwartsy",
       "city": "London",
-      "zipCode": "44444",
-      "country": "United Kingdom"
+      "zipCode": "444446",
+      "country": "USA"
     },
     {
       "id": 43455,
@@ -50,7 +50,7 @@
       "firstName": "Ronald",
       "lastName": "Clark",
       "email": "ronaldclark@gmail.com",
-      "street": "Königstrasse",
+      "street": "Konigstrasseeeeerr",
       "city": "Stuttgart",
       "zipCode": "1322383",
       "country": "Germany"

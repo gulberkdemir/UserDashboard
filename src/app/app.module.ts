@@ -23,6 +23,7 @@ import { UserComponent } from './user-management/users/user/user.component';
 import { FilterPipe } from './filter.pipe';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { UserEditComponent } from './user-management/user-edit/user-edit.component';
+import { TextInputComponent } from './shared/components/text-input/text-input.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { UserEditComponent } from './user-management/user-edit/user-edit.compone
     PageNotFoundComponent,
     UserComponent,
     FilterPipe,
-    UserEditComponent
+    UserEditComponent,
+    TextInputComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<mat-form-field class="example-full-width">
+    <mat-label>{{label}}</mat-label>
+    <input matInput [formControlName]="controlName!" placeholder="{{placeHolder}}">
+        <mat-error *ngIf="conditionFirst">
+          Please enter valid {{label}}
+        </mat-error>
+        <mat-error *ngIf="conditionSecond">
+          First Name is <strong>required</strong>
+        </mat-error>
+</mat-form-field>

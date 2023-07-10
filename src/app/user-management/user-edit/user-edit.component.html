@@ -1,73 +1,41 @@
 <form [formGroup]="userEditForm" >
 <div class="page-container">
   <div class="cards">
-    <td><mat-form-field class="example-full-width">
-      <mat-label>First name</mat-label>
-      <input matInput placeholder="Ex. Harry" formControlName="firstName" >
-      <mat-error *ngIf="userEditForm.get('firstName')?.hasError('pattern') && !userEditForm.get('firstName')?.hasError('required') ">
-        Please enter only letters
-      </mat-error>
-      <mat-error *ngIf="userEditForm.get('firstName')?.hasError('required')">
-        First Name is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Last Name</mat-label>
-      <input matInput  placeholder="Ex. Potter" formControlName="lastName">
-      <mat-error *ngIf="userEditForm.get('lastName')?.hasError('pattern') && !userEditForm.get('lastName')?.hasError('required')">
-        Please enter only letters
-      </mat-error>
-      <mat-error *ngIf="userEditForm.get('lastName')?.hasError('required')">
-        Last Name is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Email</mat-label>
-      <input matInput placeholder="Ex. pat@example.com" formControlName="email">
-      <mat-error *ngIf="userEditForm.get('email')?.hasError('email') && !userEditForm.get('email')?.hasError('required')">
-        Please enter a valid email address
-      </mat-error>
-      <mat-error *ngIf="userEditForm.get('email')?.hasError('required')">
-        Email is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Street</mat-label>
-      <input matInput placeholder="Ex. Alameda Street" formControlName="street">
-      <mat-error *ngIf="userEditForm.get('street')?.hasError('pattern') && !userEditForm.get('street')?.hasError('required')">
-        Please enter only letters
-      </mat-error>
-      <mat-error *ngIf="userEditForm.get('street')?.hasError('required')">
-        Street is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>City</mat-label>
-      <input matInput placeholder="Ex. California" formControlName="city">
-      <mat-error *ngIf="userEditForm.get('city')?.hasError('pattern') && !userEditForm.get('city')?.hasError('required')">
-        Please enter only letters
-      </mat-error>
-      <mat-error *ngIf="userEditForm.get('city')?.hasError('required')">
-        City is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Postal Code</mat-label>
-      <input matInput  placeholder="Ex. 94105" formControlName="zipCode">
-      <mat-error *ngIf="userEditForm.get('zipCode')?.hasError('pattern')">
-        Please enter only numbers
-      </mat-error>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Country</mat-label>
-      <input matInput placeholder="Ex. California" formControlName="country">
-      <mat-error *ngIf="userEditForm.get('country')?.hasError('pattern') && !userEditForm.get('country')?.hasError('required')">
-        Please enter only letters
-      </mat-error>
-      <mat-error *ngIf="userEditForm.get('country')?.hasError('required')">
-        Country is <strong>required</strong>
-      </mat-error>
-    </mat-form-field></td>
+    <td>
+      <app-text-input label='First Name' controlName='firstName' [placeHolder]="'Ex. John'"
+      [conditionFirst]="userEditForm.get('firstName')?.hasError('pattern') && !userEditForm.get('firstName')?.hasError('required')"
+      [conditionSecond]="userEditForm.get('firstName')?.hasError('required')"></app-text-input>
+    </td>
+    <td>
+      <app-text-input label='Last Name' controlName='lastName' [placeHolder]="'Ex. Peter'"
+                      [conditionFirst]="userEditForm.get('lastName')?.hasError('pattern') && !userEditForm.get('lastName')?.hasError('required')"
+                      [conditionSecond]="userEditForm.get('lastName')?.hasError('required')"></app-text-input>
+    </td>
+    <td>
+      <app-text-input label='Email' controlName='email' [placeHolder]="'Ex. johnpeter@example.com'"
+                      [conditionFirst]="userEditForm.get('email')?.hasError('email') && !userEditForm.get('email')?.hasError('required')"
+                      [conditionSecond]="userEditForm.get('email')?.hasError('required')"></app-text-input>
+    </td>
+    <td>
+      <app-text-input label='Street' controlName='street' [placeHolder]="'Ex. Alameda Street'"
+                      [conditionFirst]="userEditForm.get('street')?.hasError('pattern') && !userEditForm.get('street')?.hasError('required')"
+                      [conditionSecond]="userEditForm.get('street')?.hasError('required')"></app-text-input>
+    </td>
+    <td>
+      <app-text-input label='City' controlName='city' [placeHolder]="'Ex. California'"
+                      [conditionFirst]="userEditForm.get('city')?.hasError('pattern') && !userEditForm.get('city')?.hasError('required')"
+                      [conditionSecond]="userEditForm.get('city')?.hasError('required')"></app-text-input>
+    </td>
+    <td>
+      <app-text-input label='Zip Code' controlName='zipCode' [placeHolder]="'Ex. 94105'"
+                      [conditionFirst]="userEditForm.get('zipCode')?.hasError('pattern')"
+                    ></app-text-input>
+    </td>
+    <td>
+      <app-text-input label='Country' controlName='country' [placeHolder]="'Ex. USA'"
+                      [conditionFirst]="userEditForm.get('country')?.hasError('pattern') && !userEditForm.get('country')?.hasError('required')"
+                      [conditionSecond]="userEditForm.get('country')?.hasError('required')"></app-text-input>
+    </td>
   </div>
 </div>
 </form>

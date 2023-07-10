@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {ActivatedRoute, Params, Router} from "@angular/router";
-import {ApiService} from "../../services/api.service";
-import {UserInterface} from "../../types/user.model";
-import {HeaderService} from "../../services/header.service";
+import {ApiService} from "../../shared/services/api.service";
+import {UserInterface} from "../../shared/types/user.model";
+import {HeaderService} from "../../shared/services/header.service";
 
 @Component({
   selector: 'app-user-edit',
