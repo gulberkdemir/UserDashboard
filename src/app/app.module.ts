@@ -24,6 +24,7 @@ import { FilterPipe } from './filter.pipe';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { UserEditComponent } from './user-management/user-edit/user-edit.component';
 import { TextInputComponent } from './shared/components/text-input/text-input.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { TextInputComponent } from './shared/components/text-input/text-input.co
     MatGridListModule,
     MatCardModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

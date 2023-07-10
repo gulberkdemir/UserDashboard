@@ -42,11 +42,6 @@ header{
   padding: 6rem 1rem;
 }
 
-
-
-
-//Header styles
-
 .header-bar {
   display: flex;
   flex-direction: row;
@@ -73,7 +68,7 @@ header{
   display: grid;
   gap: 1rem;
   & mat-card  img{
-    border-radius: 50% !important;
+    border-radius: $half-width !important;
   }
 
 }

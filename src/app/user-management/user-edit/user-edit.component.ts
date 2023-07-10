@@ -30,8 +30,8 @@ export class UserEditComponent implements OnInit, OnDestroy{
       country: new FormControl('', [Validators.required,Validators.pattern('^[a-zA-Z ]+$')])
     });
 
-    this.isSaveClickedSub = this.headerService.isSaveClicked$.subscribe(a => {
-      if(a){
+    this.isSaveClickedSub = this.headerService.isSaveClicked$.subscribe(clickInfo => {
+      if(clickInfo){
         this.Submit();
       }})
   }
@@ -48,7 +48,7 @@ export class UserEditComponent implements OnInit, OnDestroy{
     this.apiService.getUser(this.id!).subscribe(
       res =>
       {
-        this.user =res;
+        this.user = res;
         this.userEditForm.setValue({
           firstName: this.user?.firstName,
           lastName: this.user?.lastName,
@@ -60,8 +60,6 @@ export class UserEditComponent implements OnInit, OnDestroy{
         })
       }
     );
-
-
 
   }
 
