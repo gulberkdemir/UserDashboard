@@ -3,12 +3,14 @@ import {HttpClient} from "@angular/common/http";
 import {UserInterface} from "../types/user.model";
 import {BehaviorSubject, Observable, tap} from "rxjs";
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
   usersSub$ = new BehaviorSubject<UserInterface[]>([])
+  apiURL = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
@@ -19,6 +21,10 @@ export class ApiService {
   getAllUsers(): Observable<UserInterface[]>{
     return this.http.get<UserInterface[]>("http://localhost:3000/userList/")
       .pipe(tap(response => this.usersSub$.next(response)));
+  }
+
+  getUser(id: number): Observable<UserInterface>{
+    return this.http.get<UserInterface>(`http://localhost:3000/userList/${id}`)
   }
 
   editUser(user: UserInterface, id: number): Observable<UserInterface>{

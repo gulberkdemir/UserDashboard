@@ -21,7 +21,7 @@ import {UsersComponent} from "./user-management/users/users.component";
 import {CommonModule} from "@angular/common";
 import { UserComponent } from './user-management/users/user/user.component';
 import { FilterPipe } from './filter.pipe';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { UserEditComponent } from './user-management/user-edit/user-edit.component';
 
 @NgModule({
@@ -48,7 +48,8 @@ import { UserEditComponent } from './user-management/user-edit/user-edit.compone
     HttpClientModule,
     MatGridListModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
