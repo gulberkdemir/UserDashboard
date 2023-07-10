@@ -13,6 +13,7 @@ export class HeaderService {
   isUsersPage$ = new BehaviorSubject<boolean>(true)
 
   searchKeywordSub$ = new BehaviorSubject<string>('')
+  isSaveClicked$ = new BehaviorSubject<boolean>(false)
 
 
 

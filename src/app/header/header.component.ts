@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, OnChanges, ViewEncapsulation} from '@angular/core';
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {HeaderService} from "../services/header.service";
 import {Observable} from "rxjs";
 import {UserInterface} from "../types/user.model";
@@ -47,6 +47,10 @@ export class HeaderComponent {
       this.apiService.createUser(newUser).subscribe();
       this.apiService.getAllUsers().subscribe();
 
+  }
+
+  Hello(){
+    this.headerService.isSaveClicked$.next(true);
   }
 
 

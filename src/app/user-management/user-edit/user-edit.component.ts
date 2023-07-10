@@ -3,6 +3,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {ApiService} from "../../services/api.service";
 import {UserInterface} from "../../types/user.model";
+import {HeaderService} from "../../services/header.service";
 
 @Component({
   selector: 'app-user-edit',
@@ -15,7 +16,7 @@ export class UserEditComponent implements OnInit{
   user?: UserInterface;
   constructor(     private route: ActivatedRoute,
                    private router: Router,
-                   private apiService: ApiService, private fb: FormBuilder) {
+                   private apiService: ApiService, private fb: FormBuilder, private headerService: HeaderService) {
     this.userEditForm = new FormGroup({
       firstName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z ]+$')]),
       lastName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z ]+$')]),
@@ -23,7 +24,13 @@ export class UserEditComponent implements OnInit{
       street:  new FormControl('', [Validators.required,Validators.pattern('^[a-zA-Z ]+$')]),
       city:  new FormControl('',[Validators.required,Validators.pattern('^[a-zA-Z ]+$') ]),
       zipCode:  new FormControl('', [Validators.pattern('^[0-9]*$') ]),
+      country: new FormControl('', [Validators.required,Validators.pattern('^[a-zA-Z ]+$')])
     });
+
+    this.headerService.isSaveClicked$.subscribe(a => {
+      if(a){
+        this.Submit();
+      }})
   }
 
   ngOnInit() {
@@ -46,7 +53,8 @@ export class UserEditComponent implements OnInit{
           email: this.user?.email,
           street:this.user?.street,
           city:this.user?.city,
-          zipCode: this.user?.zipCode
+          zipCode: this.user?.zipCode,
+          country: this.user?.country
         })
       }
     );
@@ -59,7 +67,28 @@ export class UserEditComponent implements OnInit{
   }
 
   Submit(){
-    console.log('hello')
+    console.log(this.user?.avatar)
+
+   console.log(this.userEditForm)
+
+    const updatedUser: UserInterface = {
+      id: String(this.id),
+      avatar: this.user?.avatar!,
+      firstName: this.userEditForm.get('firstName')?.value,
+      lastName: this.userEditForm.get('lastName')?.value,
+      email: this.userEditForm.get('email')?.value,
+      street: this.userEditForm.get('street')?.value,
+      city: this.userEditForm.get('city')?.value,
+      zipCode: this.userEditForm.get('zipCode')?.value,
+      country: this.userEditForm.get('country')?.value,
+
+    }
+    this.apiService.editUser(updatedUser, this.id!).subscribe();
+
+    this.apiService.getUser(this.id!).subscribe( k => console.log(k));
+    this.headerService.isSaveClicked$.next(false);
+
+
   }
 
 

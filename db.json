@@ -8,19 +8,19 @@
       "email": "harrypotter@gmail.com",
       "street": "Hogwarts",
       "city": "London",
-      "zipCode": "12345",
+      "zipCode": "44444",
       "country": "United Kingdom"
     },
     {
       "id": 43455,
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Giant_Panda_2004-03-2.jpg/640px-Giant_Panda_2004-03-2.jpg",
       "firstName": "Smith",
-      "lastName": "Jones",
+      "lastName": "Jonessss",
       "email": "smithjones@gmail.com",
       "street": "Rue de Rivoli",
-      "city": "Paris",
-      "zipCode": "3372383",
-      "country": "France"
+      "city": "Rue de Rivoli",
+      "zipCode": "Rue de Rivoli",
+      "country": "Rue de Rivoli"
     },
     {
       "id": 67889,
