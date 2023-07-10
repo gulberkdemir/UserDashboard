@@ -53,7 +53,7 @@
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
       <mat-label>Postal Code</mat-label>
-      <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" formControlName="zipCode">
+      <input matInput  placeholder="Ex. 94105" formControlName="zipCode">
       <mat-error *ngIf="userEditForm.get('zipCode')?.hasError('pattern')">
         Please enter only numbers
       </mat-error>
